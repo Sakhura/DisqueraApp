@@ -1,3 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DisqueraApp</string>
+    <string name="app_name">Disquera App</string>
+    <string name="app_logo">Logo de la aplicación</string>
+
+    <!-- Login -->
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="register_title">Registrarse</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="name_hint">Nombre</string>
+    <string name="lastname_hint">Apellido</string>
+    <string name="remember_me">Recordarme</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+
+    <!-- Catalog -->
+    <string name="search_hint">Buscar discos...</string>
+    <string name="filter_title">Filtros</string>
+    <string name="price_range">Rango de precio</string>
+    <string name="genre_filter">Género</string>
+    <string name="apply_filters">Aplicar Filtros</string>
+    <string name="clear_filters">Limpiar Filtros</string>
+
+    <!-- Cart -->
+    <string name="add_to_cart">Agregar al Carrito</string>
+    <string name="remove_from_cart">Eliminar del Carrito</string>
+    <string name="cart_empty">Tu carrito está vacío</string>
+    <string name="proceed_to_checkout">Proceder al Pago</string>
+    <string name="total">Total: %1$s</string>
+
+    <!-- Checkout -->
+    <string name="shipping_address">Dirección de Envío</string>
+    <string name="payment_method">Método de Pago</string>
+    <string name="place_order">Realizar Pedido</string>
+    <string name="order_summary">Resumen del Pedido</string>
+
+    <!-- Profile -->
+    <string name="my_profile">Mi Perfil</string>
+    <string name="my_orders">Mis Pedidos</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="phone">Teléfono</string>
+    <string name="address">Dirección</string>
+    <string name="city">Ciudad</string>
+    <string name="postal_code">Código Postal</string>
+
+    <!-- Orders -->
+    <string name="order_status_pending">Pendiente</string>
+    <string name="order_status_processing">Procesando</string>
+    <string name="order_status_shipped">Enviado</string>
+    <string name="order_status_delivered">Entregado</string>
+    <string name="order_status_cancelled">Cancelado</string>
+
+    <!-- Errors -->
+    <string name="error_network">Error de conexión</string>
+    <string name="error_loading">Error al cargar datos</string>
+    <string name="error_empty_fields">Por favor completa todos los campos</string>
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_password_length">La contraseña debe tener al menos 6 caracteres</string>
+
+    <!-- Success -->
+    <string name="success_added_to_cart">Producto agregado al carrito</string>
+    <string name="success_order_placed">Pedido realizado exitosamente</string>
+    <string name="success_profile_updated">Perfil actualizado</string>
+
 </resources>

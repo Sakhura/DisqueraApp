@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catalog_fragment">
+
+    <fragment
+        android:id="@+id/catalog_fragment"
+        android:name="com.fcterryamigos.disqueraapp.ui.fragments.catalog.CatalogFragment"
+        android:label="Catálogo" />
+
+    <fragment
+        android:id="@+id/cart_fragment"
+        android:name="com.fcterryamigos.disqueraapp.ui.fragments.cart.CartFragment"
+        android:label="Carrito" />
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.fcterryamigos.disqueraapp.ui.fragments.profile.ProfileFragment"
+        android:label="Perfil" />
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.fcterryamigos.disqueraapp.ui.fragments.home.HomeFragment"
+        android:label="Inicio" />
+
+</navigation>

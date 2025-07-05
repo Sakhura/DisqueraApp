@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permisos necesarios -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <!-- Configuración para tráfico de red en texto plano (desarrollo) -->
+    <uses-permission android:name="android.permission.CLEARTEXT_TRAFFIC" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,16 +22,47 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DisqueraApp">
+        android:theme="@style/Theme.DisqueraApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Activity principal -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ui.activities.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DisqueraApp.NoActionBar" />
+
+        <!-- Activity de login -->
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DisqueraApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Activity de administrador -->
+        <activity
+            android:name=".ui.activities.AdminActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DisqueraApp.NoActionBar" />
+
+        <!-- Provider para FileProvider (si necesitas compartir archivos) -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>
+
+
+

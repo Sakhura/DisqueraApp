@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Para compartir archivos desde el directorio cache -->
+    <cache-path name="shared_cache" path="/"/>
+
+    <!-- Para compartir archivos desde el directorio files -->
+    <files-path name="shared_files" path="/"/>
+
+    <!-- Para compartir archivos desde el directorio externo -->
+    <external-path name="external_files" path="."/>
+</paths>
